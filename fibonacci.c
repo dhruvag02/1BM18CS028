@@ -1,4 +1,4 @@
-//Fibonacci series
+//Fibonacci series using recursion in c
 
 #include<stdio.h>
 int fib(int n);

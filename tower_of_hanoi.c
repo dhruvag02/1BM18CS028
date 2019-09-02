@@ -1,4 +1,4 @@
-//tower of hanoi
+//tower of hanoi program in C
 
 #include<stdio.h>
 void tower(int n,char src,char temp,char dest);

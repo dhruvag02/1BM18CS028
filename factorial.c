@@ -1,4 +1,4 @@
-//factorial
+//Factorial Program in C using recursion
 
 #include<stdio.h>
 int fact(int n);

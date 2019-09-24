@@ -193,3 +193,116 @@ printf("Deleted element=%d\n",p->data);
 prev->next=NULL;
 free(p);
 } 
+OUTPUT
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+1
+Insert from front
+Enter the value
+10
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+1
+Insert from front
+Enter the value
+20
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+1
+Insert from front
+Enter the value
+30
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+3
+Insert at position
+Enter the position
+3
+Enter the value
+40
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+2
+Insert from end
+Enter the value
+50
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+6
+Values are displayed
+***********
+30
+20
+40
+10
+50
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+2
+Insert from end
+Enter the value
+60
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+6
+Values are displayed
+***********
+30
+20
+40
+10
+50
+60
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+5
+Delete at end
+Deleted element=60
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+6
+Values are displayed
+***********
+30
+20
+40
+10
+50
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+4
+Deletion from front
+Deleted element=30
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Delete_front	5.Del_end	6.Display
+6
+Values are displayed
+***********
+20
+40
+10
+50
+Enter other than '0' to continue
+0

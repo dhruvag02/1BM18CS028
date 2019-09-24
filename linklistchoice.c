@@ -156,3 +156,69 @@ printf("%d\n",p->data);
 p=p->next;
 }
 } 
+
+OUTPUT
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Display
+1
+Insert from front
+Enter the value
+10
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Display
+1
+Insert from front
+Enter the value
+20
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Display
+1
+Insert from front
+Enter the value
+30
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Display
+4
+Values are displayed
+***********
+30
+20
+10
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Display
+3
+Insert at position
+Enter the position
+3
+Enter the value
+40
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Display
+2
+Insert from end
+Enter the value
+50
+Enter other than '0' to continue
+1
+Menu has been displayed
+1.inser_front	2.insert_end	3.insert_pos	4.Display
+4
+Values are displayed
+***********
+30
+20
+40
+10
+50
+Enter other than '0' to continue
+0

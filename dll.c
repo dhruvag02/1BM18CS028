@@ -82,7 +82,7 @@ NODE del_value(int item,NODE head)
     NODE p=head;
     while(p!=NULL)
     {
-        if(p->data==value)
+        if(p->data==item)
         {
             if(p->prev!=NULL)
             {
@@ -107,9 +107,23 @@ if(p==NULL)
     return head;
 }
 }
+void display(NODE head)
+{
+NODE p=head;
+if(head==NULL)
+{
+printf("List is empty\n");
+return;
+}
+while(p!=NULL)
+{
+printf("%d\n",p->data);
+p=p->next;
+}
+}
 int main()
 {
-  int ch,j=1,v;
+  int ch,j=1,v,e;
   NODE head=NULL,p;
   while(j!=0)
   {
@@ -125,7 +139,7 @@ int main()
         break;
       case 2:
         printf("Enter element to be inserted\n");
-        scanf("%d",&v;
+        scanf("%d",&v);
         head=insert_rear(v,head);
         break;
       case 3:
@@ -137,8 +151,11 @@ int main()
       case 4:
         printf("Enter value to be deleted\n");
         scanf("%d",&e);
-        head=del_val(e,head);
+        head=del_value(e,head);
         break;
+	case 5:
+	display(head);
+	break;
       default:
         printf("Invalid choice\n");
         exit(0);

@@ -35,30 +35,6 @@ NODE insert_front(int item,NODE head)
     head=p;
     return head;
 }
-NODE insert_rear(int item,NODE head)
-{
-    NODE p,q;
-    q=getnode();
-    q->data=item;
-    q->next=NULL;
-    if(head==NULL)
-    {
-        q->prev==NULL;
-        head=q;
-    }
-    else
-    {
-        p=head;
-        while(p->next!=NULL)
-        {
-
-            p=p->next;
-        }
-        p->next=q;
-        q->prev=p;
-    }
-    return head;
-}
 NODE insert_left(int item,NODE head,NODE n)
 {
     NODE p=getnode();
@@ -68,7 +44,18 @@ NODE insert_left(int item,NODE head,NODE n)
         printf("List is empty, no insertion\n");
         return head;
     }
-    else
+    else if(head->prev==NULL)
+    {
+	    if(head==n)
+	    {
+		    p->next=head;
+		    head->prev=p;
+		    p->prev=NULL;
+		    head=p;
+		    return head;
+	    }
+    }
+	else
     {
         n->prev->next=p;
         p->prev=n->prev;
@@ -123,12 +110,12 @@ p=p->next;
 }
 int main()
 {
-  int ch,j=1,v,e;
+  int ch,j=1,v,val,e;
   NODE head=NULL,p;
   while(j!=0)
   {
       printf("Enter choice-\n");
-      printf("1.Insert_Front\t2.Inert_rear\t3.Insert_left\t4.Delete_value\t5.Display\n");
+      printf("1.Insert_Front\t2.Insert_left\t3.Delete_value\t4.Display\n");
       scanf("%d",&ch);
       switch(ch)
       {
@@ -138,22 +125,17 @@ int main()
         head=insert_front(v,head);
         break;
       case 2:
-        printf("Enter element to be inserted\n");
-        scanf("%d",&v);
-        head=insert_rear(v,head);
+        p=head->next;
+        printf("Enter element to be insertd\n");
+        scanf("%d",&val);
+        head=insert_left(val,head,p);
         break;
       case 3:
-        p=p->next;
-        printf("Enter element to be insertd\n");
-        scanf("%d",&v);
-        head=insert_left(v,head,p);
-        break;
-      case 4:
         printf("Enter value to be deleted\n");
         scanf("%d",&e);
         head=del_value(e,head);
         break;
-	case 5:
+	case 4:
 	display(head);
 	break;
       default:
